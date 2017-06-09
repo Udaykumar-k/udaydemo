@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app" ng-controller="ctrl">
+<form ng-submit="onsubmit()">
+<h1 style="color:blue; font-size: 3;text-align: center">
+
+        User Name&emsp;:<input type="text" ng-model="uname">&emsp;&emsp;&emsp;<br>
+    <div span ng-if="uname!=null && unname!=''">
+        Email&emsp;:<input type="text" ng-model="mailid">&emsp;&emsp;&emsp;</span><br>
+        <div span ng-if="mailid!=null && mailid!=''">
+            Password&emsp;:<input type="password" ng-model="password">&emsp;&emsp;&emsp;</span><br>
+            <div span ng-if="password!=null && password!=''">
+                Mobile&emsp;:<input type="text" ng-model="mobile">&emsp;&emsp;&emsp;</span><br>
+                <div span ng-if="mobile!=null && mobile!=''">
+
+                        <input type="submit"></span></div>
+            </div></div></div>
+</h1>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script>
+        var app=angular.module("app",[]);
+        app.controller("ctrl",ctrl);
+        function ctrl($scope){
+            $scope.onsubmit=function(){
+                alert("ok");
+            };
+        }
+
+
+
+    </script>
+
+
+</form>
+</html>

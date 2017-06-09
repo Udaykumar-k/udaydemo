@@ -1,0 +1,6 @@
+{
+  "name":"uday",
+  "dependencies":{
+    "angular":"1.6.0"
+  }
+}

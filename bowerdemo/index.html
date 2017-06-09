@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html  ng-app>
+<table width="1000" height="400" border="1"><tr><td>
+<h1 style="color:blue" align="left">Addition</h1>
+    <h1 style="color:Green">Enter number 1:<input type="number" ng-model="num1"></h1>
+    <h1 style="color:green">Enter number 2:<input type="number" ng-model="num2"></h1>
+    <h1 style="color:red" ng-bind="num1+num2"></h1>
+<td>
+    <h1 style="color:blue" align="left">subtraction</h1>
+    <h1 style="color:Green">Enter number 1:<input type="number" ng-model="num3"></h1>
+    <h1 style="color:green">Enter number 2:<input type="number" ng-model="num4"></h1>
+    <h1 style="color:red" ng-bind="num3-num4"></h1></td></tr>
+<tr><td>
+        <h1 style="color:blue" align="left">multiplication</h1>
+    <h1 style="color:Green">Enter number 1:<input type="number" ng-model="num5"></h1>
+    <h1 style="color:green">Enter number 2:<input type="number" ng-model="num6"></h1>
+    <h1 style="color:red" ng-bind="num5*num6"></h1></td>
+<td>
+            <h1 style="color:blue" align="left">Division</h1>
+    <h1 style="color:Green">Enter number 1:<input type="number" ng-model="num7"></h1>
+    <h1 style="color:green">Enter number 2:<input type="number" ng-model="num8"></h1>
+    <h1 style="color:red"  ng-bind="num7/num8"></h1></td></tr></table>
+
+<script src="bower_components/angular/angular.min.js"></script>
+
+</html>
+

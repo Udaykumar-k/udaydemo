@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app" ng-controller="ctrl">
+
+<select ng-model="model" ng-options="y.sub as y.id for y in data">
+    <option value="">choose subject</option>
+</select>
+
+<h1>{{model}}</h1>
+<script src="bower_components/angular/angular.min.js"></script>
+<script>
+    var app=angular.module("app",[]);
+    app.controller("ctrl",ctrl);
+    ctrl.$inject=["$scope"];
+    function ctrl($scope) {
+        $scope.data=[{"id":1,"sub":"angularjs"},
+                     {"id":2,"sub":"angular2"}];
+
+    }
+
+</script>
+</html>
